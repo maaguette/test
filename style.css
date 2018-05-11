@@ -1,0 +1,102 @@
+span.welcome span.tag-change {
+  height: 52px !Important;
+}
+span.welcome {
+  display: block;
+  position: relative;
+  font-size: 50px;
+  top: 30%;
+  color: #ccc;
+  margin: 0 auto;
+  margin-bottom: 0.25rem;
+  text-align: center;
+  font-weight: 700;
+  margin-left: -120px;
+}
+span.welcome a {
+  text-decoration: none;
+}
+span.welcome span.tagline {
+  position: relative;
+  line-height: normal;
+}
+span.welcome span.tag-change {
+  position: relative;
+  top: 0;
+  display: inline-block;
+  text-align: left;
+  width: 60px;
+  height: 50px;
+}
+span.welcome span.tag-change a {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0 5px;
+  color: transparent;
+  text-shadow: none;
+  transition: .5s;
+  -webkit-transition: .5s;
+}
+#home span.welcome span.tag-change a.active {
+  top: 0;
+}
+/* colors */
+span.welcome span.tag-change a.active.white {
+  color: #ccc;
+}
+span.welcome span.tag-change a.active.purple {
+  color: #a870cc;
+}
+span.welcome span.tag-change a.active.blue {
+  color: #36a7f3;
+}
+span.welcome span.tag-change a.active.green {
+  color: #85bf00;
+}
+span.welcome span.tag-change a.active.red {
+  color: #ff6b6b;
+}
+/* Slide Vertical */
+#home span.welcome span.tag-change a.vs-out {
+  top: 30px;
+}
+body.slide-vertical h1.welcome span.tag-change a {
+  top: -20px;
+}
+/* Flip Horizontal */
+body.flip-horizontal h1.welcome span.tag-change {
+  perspective: 1000;
+}
+body.flip-horizontal h1.welcome span.tag-change a {
+  transform: rotateY(180deg);
+  transform-origin: 25% 0;
+}
+body.flip-horizontal #home h1.welcome span.tag-change a.active {
+  transform: rotateY(0deg);
+}
+/* Flip Vertical */
+body.flip-vertical h1.welcome span.tag-change {
+  perspective: 1000;
+}
+body.flip-vertical h1.welcome span.tag-change a {
+  transform: rotateX(180deg);
+}
+body.flip-vertical #home h1.welcome span.tag-change a.active {
+  transform: rotateX(0deg);
+}
+/* Bounce */
+body.bounce #home h1.welcome span.tag-change a.active {
+  top: 0;
+  -moz-animation-name: bounce;
+  -moz-animation-duration: .8s;
+  -moz-animation-fill-mode: backwards;
+  -webkit-animation-name: bounce;
+  -webkit-animation-duration: .8s;
+  -webkit-animation-fill-mode: backwards;
+  animation-name: bounce;
+  animation-duration: .8s;
+  animation-fill-mode: backwards;
+}
+
+
